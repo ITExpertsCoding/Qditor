@@ -3,7 +3,12 @@ from tkinter import *
 from tkinter.filedialog import askopenfilename, asksaveasfilename
 from tkinter import messagebox
 
+#from tkinter import ttk
+#from ttkthemes import ThemedTk
+
 window = Tk()
+
+#window.set_theme("breeze")
 window.geometry("{0}x{1}+0+0".format(window.winfo_screenwidth(), window.winfo_screenheight()))
 window.rowconfigure(0, minsize=800, weight=1)
 window.columnconfigure(1, minsize=800, weight=1)
@@ -172,30 +177,3 @@ window.bind("<Button-3>", do_popup)
 window.config(menu=menu)
 window.title(" Qditor")
 mainloop()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
